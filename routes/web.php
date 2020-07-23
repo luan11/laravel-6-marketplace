@@ -91,3 +91,9 @@ Route::get('/model', function () {
 
     // return \App\User::all();
 });
+
+Route::get('/admin/stores', 'Admin\\StoreController@index');
+
+Route::get('/admin/create', 'Admin\\StoreController@create');
+
+Route::post('/admin/stores/store', 'Admin\\StoreController@store');
